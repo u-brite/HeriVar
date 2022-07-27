@@ -2,15 +2,13 @@
 
 
 ## Table of Contents
-
-- [Template](#team-repo-template)
-    - [Background](#Background)
-    - [Data](#data)
-    - [Usage](#usage)
-        - [Installation](#installation)
-        - [Requirements](#requirements) _Can be named Dependencies as well_
-        - [Activate conda environment](#activate-conda-environment) _Optional_
-        - [Steps to run ](#steps-to-run) _Optional depending on project_
+- [Background](#Background)
+- [Data](#data)
+- [Usage](#usage)
+     - [Installation](#installation)
+     - [Requirements](#requirements) _Can be named Dependencies as well_
+     - [Activate conda environment](#activate-conda-environment) _Optional_
+     - [Steps to run ](#steps-to-run) _Optional depending on project_
             - [Step-1](#step-1)
             - [Step-2](#step-2)
     - [Results](#results) _Optional depending on project_
