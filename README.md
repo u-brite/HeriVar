@@ -107,5 +107,5 @@ output_directory/
 
 ## Team Members
 
-Tarun Mamidi | tmamidi@uab.edu | Team Leader  
-Shaurita Hutchins | shutchins@uab.edu | Co-leader
+Akhil Pampana | pampana.akhil@gmail.com | apampana@uabmc.edu | Team Leader  
+
