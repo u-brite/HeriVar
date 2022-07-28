@@ -7,7 +7,7 @@ Quantifying the combined heritability of a trait based on a multi-ethnic LD pane
 - [Background](#Background)
 - [Data](#data)
 - [Tools](#tools)
-- [Usage](#usage)
+- [Process](#process)
      - [Installation](#installation)
      - [Requirements](#requirements)
      - [Activate conda environment](#activate-conda-environment) 
@@ -37,7 +37,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 - LDSC(https://github.com/bulik/ldsc).
 - Dependencies suggested by the tools above.
 
-## Usage
+## Process
 
 
 
