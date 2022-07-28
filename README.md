@@ -56,15 +56,6 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 ### Steps to run
 
 
-#### Step 1
-
-
-
-#### Step 2
-
-
-
-
 ## Results
 
 
