@@ -1,6 +1,6 @@
-# HeriVar
-               ![alt-text](https://github.com/u-brite/HeriVar/blob/170ea64b3005619d074f2b038f1af50f4529c03f/Home%20Design.gif)
+![alt-text](https://github.com/u-brite/HeriVar/blob/170ea64b3005619d074f2b038f1af50f4529c03f/Home%20Design.gif)
 
+# HeriVar
 
 Quantifying the combined heritability of a trait based on a multi-ethnic LD panel with equal distribution of samples among each ancestry group.
 
