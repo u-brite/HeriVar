@@ -1,5 +1,5 @@
 # HeriVar
-
+![alt-text](Home Design.gif)
 Quantifying the combined heritability of a trait based on a multi-ethnic LD panel with equal distribution of samples among each ancestry group.
 
 
