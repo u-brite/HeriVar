@@ -1,7 +1,5 @@
-###![alt-text](https://github.com/u-brite/HeriVar/blob/170ea64b3005619d074f2b038f1af50f4529c03f/Home%20Design.gif)
-
 <p align="center">
-  <img src="https://github.com/u-brite/HeriVar/blob/170ea64b3005619d074f2b038f1af50f4529c03f/Home%20Design.gif" alt="animated" />
+  <img src="https://github.com/u-brite/HeriVar/blob/170ea64b3005619d074f2b038f1af50f4529c03f/Home%20Design.gif" alt="animated" width="400" height="500"/>
 </p>
 
 # HeriVar
