@@ -1,7 +1,6 @@
 <p align="center">
-  <img src="https://github.com/u-brite/HeriVar/blob/aa9af52009019970360b2ad94ed1a0e8dfb2be26/Untitled%20design.gif" alt="animated" width="400" height="500"/>
+  <img src="https://github.com/u-brite/HeriVar/blob/aa9af52009019970360b2ad94ed1a0e8dfb2be26/Untitled%20design.gif" alt="animated" width="500" height="500"/>
 </p>
-
 # HeriVar
 
 Quantifying the combined heritability of a trait based on a multi-ethnic LD panel with equal distribution of samples among each ancestry group.
