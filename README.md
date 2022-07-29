@@ -1,7 +1,5 @@
 ![alt-text](https://github.com/u-brite/HeriVar/blob/170ea64b3005619d074f2b038f1af50f4529c03f/Home%20Design.gif)
-<p align="center">
-  <img width="300" height="300" src="[http://www.fillmurray.com/460/300](https://github.com/u-brite/HeriVar/blob/170ea64b3005619d074f2b038f1af50f4529c03f/Home%20Design.gif)">
-</p>
+!<h1 align="center">[alt-text](https://github.com/u-brite/HeriVar/blob/170ea64b3005619d074f2b038f1af50f4529c03f/Home%20Design.gif)</h1>
 
 # HeriVar
 
