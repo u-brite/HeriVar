@@ -29,25 +29,52 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 ## Data
 
 - High Coverage 1000g dataset downloaded from http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/
-- Gwas summary statisitcs for NTproBNP & BP downloaded from GWAS-Catalog
+- Gwas summary statisitcs for NTproBNP (In house) & BP downloaded from GWAS-Catalog
 
 
 ## Tools
 
-- R.
-- Python.
+- R. ( module load R )
+- Python. ( module load Anaconda3 )
 - PLINK(https://www.cog-genomics.org/plink/2.0/ or module load PLINK in Cheaha).
 - SUMHER(https://dougspeed.com/sumher/).
 - LDSC(https://github.com/bulik/ldsc).
-- Dependencies suggested by the tools above.
 
 ## Process
 
 ### Dependencies
+  - LDSC requires Anaconda3 or Python-2.7 and subpackages like bitarray, nose, pybedtools, scipy, numpy, pandas, bioconda.
+  - Sumher uses Intel MKL Libraries as dependencies.
+  
 
-### Installation
+### Installation  
+- LDSC
+  - Clone the github of ldsc (git clone https://github.com/bulik/ldsc.git)
+  - Module load Anaconda 
+  - Install dependencies using conda as suggested by github( conda env create --file environment.yml )
+  - Activate ldsc (  source activate ldsc )
+  - Test installation by running python scripts shared  as path of repo ( ./ldsc.py -h )
+
+  
+- Sumher
+  - Download the LDAK Linux executable file by requesting using name and email ( you will get an email from the developer with downloadables if you are a first time   user )
+  - Unzip the executable file and use it.
+  - It also have executable for MAC users.
+  
 
 ### Steps to run
+
+<p align="center">
+  <img src="https://github.com/u-brite/HeriVar/blob/aa9af52009019970360b2ad94ed1a0e8dfb2be26/Untitled%20design.gif" alt="animated" width="500" height="500"/>
+</p>
+
+  - We will take multi-ethnic summary statistics generated for NTproBNP (inhouse gwas) and BP (from GWAS-Catalog).
+  - The reference panel we want to generate is based on high coverage 1000g dataset of 2504 unrelated individuals (recently sequenced and can be downloadable from LDlinks). 
+  - We will filter the samples from 1000g so that we get an equal number of individuals covering all ancestry groups (Eur, Afr, Asian, Amr).
+  - After removing monomorphic variants ( variants with AF == 0 or AF == 1 ), we will generate multiple combinations of  variants based on clumping and tresholding parameters to get high quality variants ( LD r2 = 0.2, 0.4, 0.6, 0.8,  window length = 250kb, 500kb, 1mb, 10mb ).
+  - Using these variants, We will generate LD scores ( based on LDSC ) and thinning files ( based on SumHer ).
+  - Using the LD scores or thinning files, we will calculate H2 values and see if we could able to estimate combined heritability. 
+
 
 ## Results
 
