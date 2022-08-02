@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/u-brite/HeriVar/blob/aa9af52009019970360b2ad94ed1a0e8dfb2be26/Untitled%20design.gif" alt="animated" width="500" height="500"/>
+  <img src="https://github.com/u-brite/HeriVar/blob/aa9af52009019970360b2ad94ed1a0e8dfb2be26/Untitled%20design.gif" alt="animated" width="1024" height="1024"/>
 </p>
 
 ## HeriVar
@@ -65,7 +65,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 ### Steps to run
 
 <p align="center">
-  <img src="https://github.com/u-brite/HeriVar/blob/29f1bade13514fe8d08ad4302198a6b55fa33aba/Workflow.png" alt="animated" width="500" height="500"/>
+  <img src="https://github.com/u-brite/HeriVar/blob/29f1bade13514fe8d08ad4302198a6b55fa33aba/Workflow.png" alt="animated" width="1024" height="1024"/>
 </p>
 
   - We will take multi-ethnic summary statistics generated for NTproBNP (inhouse gwas) and BP (from GWAS-Catalog).
