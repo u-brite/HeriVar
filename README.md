@@ -14,7 +14,6 @@ Quantifying the combined heritability of a trait based on a multi-ethnic LD pane
 - [Process](#process)
      - [Dependencies](#dependencies)
      - [Installation](#installation)
-     - [Activate conda environment](#activate-conda-environment) 
      - [Steps to run ](#steps-to-run)
 - [Results](#results) 
 - [Team Members](#team-members)
