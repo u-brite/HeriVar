@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/u-brite/HeriVar/blob/aa9af52009019970360b2ad94ed1a0e8dfb2be26/Untitled%20design.gif" alt="animated" width="500" height="500"
+  <img src="https://github.com/u-brite/HeriVar/blob/e02bebbc88faed83f5558470dbe74d0073c493a6/Final_Logo.gif" alt="animated" width="500" height="500"
 </p>
 
 ## HeriVar
