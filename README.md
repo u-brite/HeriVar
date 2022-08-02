@@ -70,7 +70,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 
   - We will take multi-ethnic summary statistics generated for NTproBNP (inhouse gwas) and BP (from GWAS-Catalog).
   - The reference panel we want to generate is based on high coverage 1000g dataset of 2504 unrelated individuals (recently sequenced and can be downloadable from LDlinks). 
-  - We will filter the samples from 1000g so that we get an equal number of individuals covering all ancestry groups (Eur, Afr, Asian, Amr).
+  - We will filter the samples from 1000g so that we get an equal number of individuals covering all ancestry groups (EUR, AFR, EAS, SAS, AMR).
   - After removing monomorphic variants ( variants with AF == 0 or AF == 1 ), we will generate multiple combinations of  variants based on clumping and tresholding parameters to get high quality variants ( LD r2 = 0.2, 0.4, 0.6, 0.8,  window length = 250kb, 500kb, 1mb, 10mb ).
   - Using these variants, We will generate LD scores ( based on LDSC ) and thinning files ( based on SumHer ).
   - Using the LD scores or thinning files, we will calculate H2 values and see if we could able to estimate combined heritability. 
