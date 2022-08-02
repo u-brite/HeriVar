@@ -28,7 +28,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 
 ## Data
 
-- High Coverage 1000g dataset downloaded from http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/
+- High Coverage 1000g dataset downloaded from http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/ @u-brite/technical-committee
 - Gwas summary statisitcs for NTproBNP (In house) & BP downloaded from GWAS-Catalog
 
 
