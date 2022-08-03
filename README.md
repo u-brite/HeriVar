@@ -35,19 +35,19 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 
 - R. ( module load R )
 - Python. ( module load Anaconda3 )
-- PLINK(https://www.cog-genomics.org/plink/2.0/ or module load PLINK in Cheaha).
-- SUMHER(https://dougspeed.com/sumher/).
-- LDSC(https://github.com/bulik/ldsc).
+- PLINK (https://www.cog-genomics.org/plink/2.0/ or module load PLINK in Cheaha).
+- SUMHER (https://dougspeed.com/sumher/).
+- LDSC (https://github.com/bulik/ldsc).
 
 ## Process
 
 ### Dependencies
   - LDSC requires Anaconda3 or Python-2.7 and subpackages like bitarray, nose, pybedtools, scipy, numpy, pandas, bioconda.
-  - Sumher uses Intel MKL Libraries as dependencies.
+  - Sumher uses Intel MKL Libraries as dependencies. ( module load imkl/2020.1.217-iimpi-2020a )
   
 
 ### Installation  
-- LDSC
+- LDSC ( Required to be installed by everyone in their home directory to use it )
   - Clone the github of ldsc (git clone https://github.com/bulik/ldsc.git) and cd into the folder
   - Module load Anaconda3 ( module load Anaconda3 ) 
   - Install dependencies using conda as suggested by github( conda env create --file environment.yml )
@@ -57,11 +57,11 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
   
 - Sumher
   - Download the LDAK Linux executable file by requesting using name and email ( you will get an email from the developer with downloadables if you are a first time   user )
-  - Unzip the executable file and use it.
-  - It also have executable for MAC users.
+  - Unzip the executable file and use it. ( /data/project/ubrite/hackathon2022/staging_area_teams/HeriVar/Tools/ldak5.2.linux - It can be accessible by everyone)
+  - It also have executable for MAC users. 
   
+- Note: Please check Dependencies before installing the tool (#dependencies)
 
-### Steps to run
 
 <p align="center">
   <img src="https://github.com/u-brite/HeriVar/blob/29f1bade13514fe8d08ad4302198a6b55fa33aba/Workflow.png" alt="animated" width="1024" height="1024"/>
