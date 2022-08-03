@@ -48,8 +48,8 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 
 ### Installation  
 - LDSC
-  - Clone the github of ldsc (git clone https://github.com/bulik/ldsc.git)
-  - Module load Anaconda 
+  - Clone the github of ldsc (git clone https://github.com/bulik/ldsc.git) and cd into the folder
+  - Module load Anaconda3 ( module load Anaconda3 ) 
   - Install dependencies using conda as suggested by github( conda env create --file environment.yml )
   - Activate ldsc (  source activate ldsc )
   - Test installation by running python scripts shared  as path of repo ( ./ldsc.py -h )
