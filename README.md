@@ -82,9 +82,9 @@ Heritability of a trait in multi-ethnic population is reported along with some o
 
 ## Team Members
 
+- Abdullah Abood | aa9gj@virginia.edu | Team Member 
 - Akhil Pampana | pampana.akhil@gmail.com | apampana@uabmc.edu | Team Leader 
-- Abdullah Abood | Team Member 
-- Yongyu Qiang | Team Member 
+- Nick Sumpter | nicks95@uab.edu | Team Member 
 - Simranjit Kaur Virk | Team Member 
-- Nick Sumpter | Team Member 
+- Yongyu Qiang | frankqiang5040@gmail.com | Team Member 
 
