@@ -39,7 +39,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 - SUMHER (https://dougspeed.com/sumher/).
 - LDSC (https://github.com/bulik/ldsc).
 
-## Process
+## Process  ( Needs Revisions )
 
 ### Dependencies
   - LDSC requires Anaconda3 or Python-2.7 and subpackages like bitarray, nose, pybedtools, scipy, numpy, pandas, bioconda. (will be installed when generating environment)
