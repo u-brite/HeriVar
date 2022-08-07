@@ -28,7 +28,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 ## Data
 
 - High Coverage 1000g dataset downloaded from http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/ 
-- Gwas summary statisitcs for NTproBNP (In house) & BP downloaded from GWAS-Catalog
+- Gwas summary statisitcs for NTproBNP (In house) & BP downloaded from Pan-Ukbiobank analysis. (https://pan.ukbb.broadinstitute.org/phenotypes)
 
 
 ## Tools
@@ -36,14 +36,16 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 - R. ( module load R )
 - Python. ( module load Anaconda3 )
 - PLINK (https://www.cog-genomics.org/plink/2.0/ or module load PLINK in Cheaha).
-- SUMHER (https://dougspeed.com/sumher/).
+- LDAK/SUMHER (https://dougspeed.com/sumher/).
 - LDSC (https://github.com/bulik/ldsc).
+- LiftOver ( https://genome.ucsc.edu/cgi-bin/hgLiftOver )
 
 ## Process  ( Needs Revisions )
 
 ### Dependencies
-  - LDSC requires Anaconda3 or Python-2.7 and subpackages like bitarray, nose, pybedtools, scipy, numpy, pandas, bioconda. (will be installed when generating environment)
+  - LDSC requires Anaconda3 or Python-2.7 and subpackages like bitarray, nose, pybedtools, scipy, numpy, pandas, bioconda. (will be installed when generating environment).
   - Sumher uses Intel MKL Libraries as dependencies. ( module load imkl/2020.1.217-iimpi-2020a )
+  
   
 
 ### Installation  
@@ -51,7 +53,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
   - Clone the github of ldsc (git clone https://github.com/bulik/ldsc.git) and cd into the folder
   - Module load Anaconda3 ( module load Anaconda3 ) 
   - Install dependencies using conda as suggested by github ( conda env create --file environment.yml )
-  - Activate ldsc (  source activate ldsc )
+  - Activate ldsc ( source activate ldsc )
   - Test installation by running python scripts shared  as path of repo ( ./ldsc.py -h )
 
   
@@ -62,9 +64,15 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
   
 - Note: Please check Dependencies before installing the tools.
 
+- LiftOver
+  - Download the file from  https://genome.ucsc.edu/cgi-bin/hgLiftOver 
+  - Download the chain file needed for conversion - we can download it from above link.
+  - Run liftOver -h
+  
+  
 
 <p align="center">
-  <img src="https://github.com/u-brite/HeriVar/blob/29f1bade13514fe8d08ad4302198a6b55fa33aba/Workflow.png" alt="animated" width="1024" height="1024"/>
+  <img src="https://github.com/u-brite/HeriVar/blob/c0f7bf138a00b7c887fd7504f24f0c40f445ded4/Work_Flow.png" alt="animated" width="1024" height="1024"/>
 </p>
 
   - We will take multi-ethnic summary statistics generated for NTproBNP (inhouse gwas) and BP (from GWAS-Catalog).
@@ -77,7 +85,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 
 ## Results
 
-Heritability of a trait in multi-ethnic population is reported along with some other plots. 
+
 
 Summary of steps in the analysis:
 - Imported information on the 1000G individuals into R and filtered it to remove individuals from the AMR super-population (due to admixture), then randomly sampled each super population to keep even total numbers.
