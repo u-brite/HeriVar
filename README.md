@@ -40,7 +40,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 - LDSC (https://github.com/bulik/ldsc).
 - LiftOver ( https://genome.ucsc.edu/cgi-bin/hgLiftOver )
 
-## Process  ( Needs Revisions )
+## Process 
 
 ### Dependencies
   - LDSC requires Anaconda3 or Python-2.7 and subpackages like bitarray, nose, pybedtools, scipy, numpy, pandas, bioconda. (will be installed when generating environment).
@@ -61,8 +61,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
   - Download the LDAK Linux executable file by requesting using name and email ( you will get an email from the developer with downloadables if you are a first time   user )
   - Unzip the executable file and use it. ( /data/project/ubrite/hackathon2022/staging_area_teams/HeriVar/Tools/ldak5.2.linux - It can be accessible by everyone)
   - It also have executable for MAC users. 
-  
-- Note: Please check Dependencies before installing the tools.
+    Note: Please check Dependencies before installing the tools.
 
 - LiftOver
   - Download the file from  https://genome.ucsc.edu/cgi-bin/hgLiftOver 
@@ -85,23 +84,47 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 
 ## Results
 
+- Datasets
+  - We downloaded 1000g high coverage reference dataset from http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/. (cite this)
+  - We then extracted individuals files and randomly chose 489 unrelated individuals among each ancestry group.
+  - Rationale behind including sample individuals from multiple ancestry groups is by taking equal number of individuals, we can have equal ld pattern distribution among the individuals.
+  - Admixed population were excluded from the analysis along with related individuals which to 1956 individuals.
+  - We removed variants with less than 1% minor allele frequency and variants with more than 5% missing data.
+    - Allele Frequency Distribution among each ancestry and overall.
+    - [ Insert Plot Here ]
+  
+ - PCA Analysis
+  - We used Plink to calculate principal compnents analysis to test whether we have equal distributions of samples per ancestry group.
+
+      - insert pca plot here
+
+- Prunning & Thresholding
+   - After subsetting to sample of interest, we did prunning and thresholding based on different cutoffs.
+   - Plink is used to generate the files needed.
+   - We used R2 and window size parameters for analysis.
+     - R-squared cutoff of 0.2, 0.4, 0.6, 0.8.
+     - Window size of 250kb, 500kb, 1Mb, 10Mb.
+    -  Insert differences plot for variants counts
+    -  We had ran near 1000 jobs for generating this datasets in Cheaha.
+    -  We decided to exclude High LD regions as recommended by the tools.
+    -  We subsetted the datasets to two categories.
+       - Pre HighLD regions removal.
+       - Post Hight LD regions removal.
+
+- Refernces panel generation
+  - We used the two categories as mentioend above and used two tools to calculated reference LD panels.
+  - We used ldsc to generate LD scores for all the categories we have.
+  - For LDAK annotations, We used liftover to convert  blk annotations from grch37 to grch38 and working on generting tagging files
+    - We had an issue generating LDAK annotations files and decided to pursue analysis after hackathon. 
+  
+ - Phenotypes Processing
+   - We have also worked on processing phenotypes based as suggested by the tools.
+  
+- Heritability 
+  - We tried to generate h2 values using LDAK & LDSC but couldnt able to complete because of last minute issues. 
 
 
-Summary of steps in the analysis:
-- Imported information on the 1000G individuals into R and filtered it to remove individuals from the AMR super-population (due to admixture), then randomly sampled each super population to keep even total numbers.
-  - Resulted in 1,956 individuals (489 per super population).
-- Filtered high coverage 1000G VCF files to keep only these filtered individuals and to keep all variants that had "PASS" in their filter row (i.e. passed quality control).
-- Converted filtered VCF files to plink format, removing variants with less than 1% minor allele frequency and variants with more than 5% missing data.
-- Pruned plink files using 16 total categories:
-  - R-squared cutoff of 0.2, 0.4, 0.6, 0.8.
-  - Window size of 250kb, 500kb, 1Mb, 10Mb.
-- Excluded variants in regions of high LD.
-- Calculated LD scores for all different combinations of the above pruned plink files.
-  - This involved several challenges, including lifting annotations from hg19 to hg38, modifying variant IDs, removing newly created duplicate variant IDs etc.
-- Calculated LD tagging files for use in SumHer software.
-  - This also involved several challenges, including lifting annotations from hg19 to hg38, modifying variant IDs, removing newly created duplicate variant IDs etc.
-- Downloaded publicly available GWAS summary statistics for serum urate, systolic blood pressure, and diastolic blood pressure.
-  - These files had to be manipulated to fit the LD reference panel by lifting over variant locations from hg19 to hg38 etc.
+
 
 ## Team Members
 
