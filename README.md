@@ -28,7 +28,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 ## Data
 
 - High Coverage 1000g dataset downloaded from http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20201028_3202_phased/ 
-- Gwas summary statisitcs for NTproBNP (In house) & BP downloaded from Pan-Ukbiobank analysis. (https://pan.ukbb.broadinstitute.org/phenotypes)
+- GWAS summary statisitcs for NTproBNP (In house) & BP downloaded from Pan-Ukbiobank analysis. (https://pan.ukbb.broadinstitute.org/phenotypes)
 
 
 ## Tools
@@ -44,7 +44,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 
 ### Dependencies
   - LDSC requires Anaconda3 or Python-2.7 and subpackages like bitarray, nose, pybedtools, scipy, numpy, pandas, bioconda. (will be installed when generating environment).
-  - Sumher uses Intel MKL Libraries as dependencies. ( module load imkl/2020.1.217-iimpi-2020a )
+  - SumHer uses Intel MKL Libraries as dependencies. ( module load imkl/2020.1.217-iimpi-2020a )
   
   
 
@@ -58,7 +58,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 
   
 - Sumher
-  - Download the LDAK Linux executable file by requesting using name and email ( you will get an email from the developer with downloadables if you are a first time   user )
+  - Download the LDAK Linux executable file by requesting using name and email ( you will get an email from the developer with downloadables if you are a first time user )
   - Unzip the executable file and use it. ( /data/project/ubrite/hackathon2022/staging_area_teams/HeriVar/Tools/ldak5.2.linux - It can be accessible by everyone)
   - It also have executable for MAC users. 
     Note: Please check Dependencies before installing the tools.
