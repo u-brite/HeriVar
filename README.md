@@ -74,13 +74,6 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
   <img src="https://github.com/u-brite/HeriVar/blob/c0f7bf138a00b7c887fd7504f24f0c40f445ded4/Work_Flow.png" alt="animated" width="1024" height="1024"/>
 </p>
 
-  - We will take multi-ethnic summary statistics generated for NTproBNP (inhouse gwas) and BP (from GWAS-Catalog).
-  - The reference panel we want to generate is based on high coverage 1000g dataset of 2504 unrelated individuals (recently sequenced and can be downloadable from LDlinks). 
-  - We will filter the samples from 1000g so that we get an equal number of individuals covering all ancestry groups (EUR, AFR, EAS, SAS, AMR).
-  - After removing monomorphic variants ( variants with AF == 0 or AF == 1 ), we will generate multiple combinations of  variants based on clumping and tresholding parameters to get high quality variants ( LD r2 = 0.2, 0.4, 0.6, 0.8,  window size = 250kb, 500kb, 1mb, 10mb ).
-  - Using these variants, We will generate LD scores ( based on LDSC ) and thinning files ( based on SumHer ).
-  - Using the LD scores or thinning files, we will calculate H2 values and see if we could able to estimate combined heritability. 
-
 
 ## Results
 
@@ -90,38 +83,70 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
   - Rationale behind including sample individuals from multiple ancestry groups is by taking equal number of individuals, we can have equal ld pattern distribution among the individuals.
   - Admixed population were excluded from the analysis along with related individuals which to 1956 individuals.
   - We removed variants with less than 1% minor allele frequency and variants with more than 5% missing data.
-    - Allele Frequency Distribution among each ancestry and overall.
-    - [ Insert Plot Here ]
+                          
+                                  Allele Frequency Distribution among each ancestry and overall.
   
- - PCA Analysis
+<p align="center">
+  <img src="https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/allelefreq.png" alt="animated" width="1024" height="1024"/>
+</p>
+  
+<p align="center">
+  <img src="https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/allelefreq_ancestry.png" alt="animated" width="1024" height="1024"/>
+</p>
+  
+
+
+- PCA Analysis
   - We used Plink to calculate principal compnents analysis to test whether we have equal distributions of samples per ancestry group.
 
-      - insert pca plot here
+                                                             PC distributions stratified by Ancestry
+<p align="center">
+  <img src="https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/pc1_vs_pc2.png" alt="animated" width="500" height="500"
+</p>
+
+<p align="center">
+  <img src="https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/pc1_vs_pc3.png" alt="animated" width="500" height="500"
+</p>
+
+
 
 - Prunning & Thresholding
    - After subsetting to sample of interest, we did prunning and thresholding based on different cutoffs.
    - Plink is used to generate the files needed.
    - We used R2 and window size parameters for analysis.
-     - R-squared cutoff of 0.2, 0.4, 0.6, 0.8.
-     - Window size of 250kb, 500kb, 1Mb, 10Mb.
-    -  Insert differences plot for variants counts
-    -  We had ran near 1000 jobs for generating this datasets in Cheaha.
-    -  We decided to exclude High LD regions as recommended by the tools.
-    -  We subsetted the datasets to two categories.
+      - R-squared cutoff of 0.2, 0.4, 0.6, 0.8.
+      - Window size of 250kb, 500kb, 1Mb, 10Mb.
+                                
+                                Distribution of Variants after P + T
+<p align="center">
+  <img src="https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/prune_compare.png" alt="animated" width="500" height="500"
+</p>
+   
+   -  We had ran near 1000 jobs for generating this datasets in Cheaha.
+   -  We decided to exclude High LD regions as recommended by the tools.
+   -  We subsetted the datasets to two categories.
        - Pre HighLD regions removal.
        - Post Hight LD regions removal.
 
 - Refernces panel generation
   - We used the two categories as mentioend above and used two tools to calculated reference LD panels.
   - We used ldsc to generate LD scores for all the categories we have.
+                                
+                                  LD_scores Distribution for Chromosome 22
+  
+<p align="center">
+  <img src=" https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/ldsc_22.png" alt="animated" width="500" height="500"
+</p>
+ 
+          
   - For LDAK annotations, We used liftover to convert  blk annotations from grch37 to grch38 and working on generting tagging files
-    - We had an issue generating LDAK annotations files and decided to pursue analysis after hackathon. 
+      - We had an issue generating LDAK annotations files and decided to pursue analysis after hackathon. 
   
  - Phenotypes Processing
-   - We have also worked on processing phenotypes based as suggested by the tools.
+    - We have also worked on processing phenotypes based as suggested by the tools.
   
 - Heritability 
-  - We tried to generate h2 values using LDAK & LDSC but couldnt able to complete because of last minute issues. 
+    - We tried to generate h2 values using LDAK & LDSC but couldnt able to complete because of last minute issues. 
 
 
 
