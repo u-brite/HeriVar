@@ -103,3 +103,6 @@ logs/
 .java/
 
 /.vscode/settings.json
+
+# macOS index files
+.DS_Store
