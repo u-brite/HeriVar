@@ -40,7 +40,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 - LDSC (https://github.com/bulik/ldsc).
 - LiftOver ( https://genome.ucsc.edu/cgi-bin/hgLiftOver )
 
-## Process  ( Needs Revisions )
+## Process 
 
 ### Dependencies
   - LDSC requires Anaconda3 or Python-2.7 and subpackages like bitarray, nose, pybedtools, scipy, numpy, pandas, bioconda. (will be installed when generating environment).
@@ -99,17 +99,17 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
       - insert pca plot here
 
 - Prunning & Thresholding
- - After subsetting to sample of interest, we did prunning and thresholding based on different cutoffs.
- - Plink is used to generate the files needed.
- - We used R2 and window size parameters for analysis.
-   - R-squared cutoff of 0.2, 0.4, 0.6, 0.8.
-   - Window size of 250kb, 500kb, 1Mb, 10Mb.
- -  Insert differences plot for variants counts
- -  We had ran near 1000 jobs for generating this datasets in Cheaha.
- -  We decided to exclude High LD regions as recommended by the tools.
- -  We subsetted the datasets to two categories.
-    - Pre HighLD regions removal.
-    - Post Hight LD regions removal.
+   - After subsetting to sample of interest, we did prunning and thresholding based on different cutoffs.
+   - Plink is used to generate the files needed.
+   - We used R2 and window size parameters for analysis.
+     - R-squared cutoff of 0.2, 0.4, 0.6, 0.8.
+     - Window size of 250kb, 500kb, 1Mb, 10Mb.
+    -  Insert differences plot for variants counts
+    -  We had ran near 1000 jobs for generating this datasets in Cheaha.
+    -  We decided to exclude High LD regions as recommended by the tools.
+    -  We subsetted the datasets to two categories.
+       - Pre HighLD regions removal.
+       - Post Hight LD regions removal.
 
 - Refernces panel generation
   - We used the two categories as mentioend above and used two tools to calculated reference LD panels.
