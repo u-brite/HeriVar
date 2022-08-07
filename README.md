@@ -77,14 +77,27 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 
 ## Results
 
-Heritability of a trait in multi-ethnic population is reported along with some other plots.  
-- TBA
+Heritability of a trait in multi-ethnic population is reported along with some other plots. 
+
+Summary of steps in the analysis:
+- Imported information on the 1000G individuals into R and filtered it to remove individuals from the AMR super-population (due to admixture), then randomly sampled each super population to keep even total numbers.
+  - Resulted in 1,956 individuals (489 per super population).
+- Filtered high coverage 1000G VCF files to keep only these filtered individuals and to keep all variants that had "PASS" in their filter row (i.e. passed quality control).
+- Converted filtered VCF files to plink format, removing variants with less than 1% minor allele frequency and variants with more than 5% missing data.
+- Pruned plink files using 16 total categories:
+  - R-squared cutoff of 0.2, 0.4, 0.6, 0.8.
+  - Window size of 250kb, 500kb, 1Mb, 10Mb.
+- Excluded variants in regions of high LD.
+- Calculated LD scores for all different combinations of the above pruned plink files.
+  - This involved several challenges, including lifting annotations from hg19 to hg38, modifying variant IDs, removing newly created duplicate variant IDs etc.
+- Calculated LD tagging files for use in SumHer software.
+  - This also involved several challenges, including lifting annotations from hg19 to hg38, modifying variant IDs, removing newly created duplicate variant IDs etc.
+- Downloaded publicly available GWAS summary statistics for serum urate, systolic blood pressure, and diastolic blood pressure.
+  - These files had to be manipulated to fit the LD reference panel by lifting over variant locations from hg19 to hg38 etc.
 
 ## Team Members
 
-- Abdullah Abood | aa9gj@virginia.edu | Team Member 
 - Akhil Pampana | pampana.akhil@gmail.com | apampana@uabmc.edu | Team Leader 
 - Nick Sumpter | nicks95@uab.edu | Team Member 
-- Simranjit Kaur Virk | skvirk@iu.edu | Team Member 
-- Yongyu Qiang | frankqiang5040@gmail.com | Team Member 
+- Yongyu (Frank) Qiang | frankqiang5040@gmail.com | Team Member 
 
