@@ -84,7 +84,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
   - Admixed population were excluded from the analysis along with related individuals which to 1956 individuals.
   - We removed variants with less than 1% minor allele frequency and variants with more than 5% missing data.
                           
-                                  Allele Frequency Distribution among each ancestry and overall.
+                                   Allele Frequency Distribution among each ancestry and overall.
   
 <p align="center">
   <img src="https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/allelefreq.png" alt="animated" width="1024" height="1024"/>
@@ -117,7 +117,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
       - R-squared cutoff of 0.2, 0.4, 0.6, 0.8.
       - Window size of 250kb, 500kb, 1Mb, 10Mb.
                                 
-                                Distribution of Variants after P + T
+                                   Distribution of Variants after P + T
 <p align="center">
   <img src="https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/prune_compare.png" alt="animated" width="500" height="500"
 </p>
@@ -132,7 +132,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
   - We used the two categories as mentioend above and used two tools to calculated reference LD panels.
   - We used ldsc to generate LD scores for all the categories we have.
                                 
-                                  LD_scores Distribution for Chromosome 22
+                                    LD_scores Distribution for Chromosome 22
   
 <p align="center">
   <img src="https://github.com/u-brite/HeriVar/blob/fdc2d2c27d4174302b22f97c9b8a245cad6b3ded/ldsc_22.png" alt="" width="500" height="500"
