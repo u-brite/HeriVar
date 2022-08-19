@@ -71,7 +71,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
   
 
 <p align="center">
-  <img src="https://github.com/u-brite/HeriVar/blob/c0f7bf138a00b7c887fd7504f24f0c40f445ded4/Work_Flow.png" alt="animated" width="1024" height="1024"/>
+  <img src="https://github.com/u-brite/HeriVar/blob/c0f7bf138a00b7c887fd7504f24f0c40f445ded4/Work_Flow.png" alt="animated" width="200" height="200"/>
 </p>
 
 
@@ -87,11 +87,11 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
                                  Allele Frequency Distribution among each ancestry and overall.
   
 <p align="center">
-  <img src="https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/allelefreq.png" alt="animated" width="1024" height="1024"/>
+  <img src="https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/allelefreq.png" alt="animated" width="200" height="200"/>
 </p>
   
 <p align="center">
-  <img src="https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/allelefreq_ancestry.png" alt="animated" width="1024" height="1024"/>
+  <img src="https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/allelefreq_ancestry.png" alt="animated" width="200" height="200"/>
 </p>
   
 
@@ -101,11 +101,11 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 
                                            PC distributions stratified by Ancestry
 <p align="center">
-  <img src="https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/pc1_vs_pc2.png" alt="animated" width="500" height="500"
+  <img src="https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/pc1_vs_pc2.png" alt="animated" width="200" height="200"
 </p>
 
 <p align="center">
-  <img src="https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/pc1_vs_pc3.png" alt="animated" width="500" height="500"
+  <img src="https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/pc1_vs_pc3.png" alt="animated" width="200" height="200"
 </p>
 
 
@@ -119,7 +119,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
                                 
                                             Distribution of Variants after P + T
 <p align="center">
-  <img src="https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/prune_compare.png" alt="animated" width="500" height="500"
+  <img src="https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/prune_compare.png" alt="animated" width="200" height="200"
 </p>
    
    -  We had ran near 1000 jobs for generating this datasets in Cheaha.
@@ -135,7 +135,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
                                             LD_scores Distribution for Chromosome 22
   
 <p align="center">
-  <img src="https://github.com/u-brite/HeriVar/blob/fdc2d2c27d4174302b22f97c9b8a245cad6b3ded/ldsc_22.png" alt="" width="500" height="500"
+  <img src="https://github.com/u-brite/HeriVar/blob/fdc2d2c27d4174302b22f97c9b8a245cad6b3ded/ldsc_22.png" alt="" width="200" height="200"
 </p>
  
           
