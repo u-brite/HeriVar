@@ -135,7 +135,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
                                   LD_scores Distribution for Chromosome 22
   
 <p align="center">
-  <img src=" https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/ldsc_22.png" alt="animated" width="500" height="500"
+  <img src=" https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/ldsc_22.png" width="500" height="500"
 </p>
  
           
