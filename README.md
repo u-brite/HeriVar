@@ -99,7 +99,7 @@ With the increasing availability of multi-ethnic whole genome sequence datasets,
 - PCA Analysis
   - We used Plink to calculate principal compnents analysis to test whether we have equal distributions of samples per ancestry group.
 
-                                                       PC distributions stratified by Ancestry
+                                                PC distributions stratified by Ancestry
 <p align="center">
   <img src="https://github.com/u-brite/HeriVar/blob/3e3f53b7060bd4c3e4f21dc6ce995347b69e1b5e/pc1_vs_pc2.png" alt="animated" width="500" height="500"
 </p>
